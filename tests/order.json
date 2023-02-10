@@ -1,0 +1,631 @@
+{
+    "version": "0",
+    "id": "a32950fb-4dd3-6fc4-e260-5ba07b2b80e6",
+    "detail-type": "shopifyWebhook",
+    "source": "aws.partner/shopify.com/22797844481/CAPI-Shopify-LOOD",
+    "account": "908963087235",
+    "time": "2023-02-09T19:12:23Z",
+    "region": "sa-east-1",
+    "resources": [
+
+    ],
+    "detail": {
+        "payload": {
+            "id": 5262982283547,
+            "admin_graphql_api_id": "gid://shopify/Order/5262982283547",
+            "app_id": 16392290305,
+            "browser_ip": "None",
+            "buyer_accepts_marketing": true,
+            "cancel_reason": "None",
+            "cancelled_at": "None",
+            "cart_token": "None",
+            "checkout_id": "None",
+            "checkout_token": "None",
+            "closed_at": "None",
+            "company": "None",
+            "confirmed": true,
+            "contact_email": "victorio-rj@hotmail.com",
+            "created_at": "2023-02-09T16:10:42-03:00",
+            "currency": "BRL",
+            "current_subtotal_price": "136.04",
+            "current_subtotal_price_set": {
+                "shop_money": {
+                    "amount": "136.04",
+                    "currency_code": "BRL"
+                },
+                "presentment_money": {
+                    "amount": "136.04",
+                    "currency_code": "BRL"
+                }
+            },
+            "current_total_discounts": "43.81",
+            "current_total_discounts_set": {
+                "shop_money": {
+                    "amount": "43.81",
+                    "currency_code": "BRL"
+                },
+                "presentment_money": {
+                    "amount": "43.81",
+                    "currency_code": "BRL"
+                }
+            },
+            "current_total_duties_set": "None",
+            "current_total_price": "148.94",
+            "current_total_price_set": {
+                "shop_money": {
+                    "amount": "148.94",
+                    "currency_code": "BRL"
+                },
+                "presentment_money": {
+                    "amount": "148.94",
+                    "currency_code": "BRL"
+                }
+            },
+            "current_total_tax": "0.00",
+            "current_total_tax_set": {
+                "shop_money": {
+                    "amount": "0.00",
+                    "currency_code": "BRL"
+                },
+                "presentment_money": {
+                    "amount": "0.00",
+                    "currency_code": "BRL"
+                }
+            },
+            "customer_locale": "None",
+            "device_id": "None",
+            "discount_codes": [{
+                "code": "Custom discount",
+                "amount": "43.81",
+                "type": "fixed_amount"
+            }],
+            "email": "victorio-rj@hotmail.com",
+            "estimated_taxes": false,
+            "financial_status": "paid",
+            "fulfillment_status": "None",
+            "gateway": "EvolveHub Gateway",
+            "landing_site": "None",
+            "landing_site_ref": "None",
+            "location_id": "None",
+            "merchant_of_record_app_id": "None",
+            "name": "LOOD4682",
+            "note": "\n  fb997dfb435782f\n",
+            "note_attributes": [{
+                    "name": "Link de pedido",
+                    "value": "https://checkout.lood.com.br/Order/0f132204-ee64-43d5-8bf0-6ad391694547/pending"
+                },
+                {
+                    "name": "aditional_info_extra_complemento",
+                    "value": "Casa 01"
+                },
+                {
+                    "name": "CheckoutToken",
+                    "value": "0f132204-ee64-43d5-8bf0-6ad391694547"
+                },
+                {
+                    "name": "aditional_info_extra_billing_address_number",
+                    "value": "79"
+                },
+                {
+                    "name": "aditional_info_extra_billing_address_bairro",
+                    "value": "Cosmos"
+                },
+                {
+                    "name": "aditional_info_extra_billing_address_complemento",
+                    "value": "Casa 01"
+                },
+                {
+                    "name": "aditional_info_extra_billing_address_cidade",
+                    "value": "Rio de Janeiro"
+                },
+                {
+                    "name": "shipping_payment_type",
+                    "value": "Pix"
+                },
+                {
+                    "name": "aditional_info_extra_endereco",
+                    "value": "Rua Professora Maria Jurema Muniz"
+                },
+                {
+                    "name": "aditional_info_extra_billing_endereco",
+                    "value": "Rua Professora Maria Jurema Muniz"
+                },
+                {
+                    "name": "aditional_info_extra_numero",
+                    "value": "79"
+                },
+                {
+                    "name": "aditional_info_extra_bairro",
+                    "value": "Cosmos"
+                },
+                {
+                    "name": "aditional_info_extra_cidade",
+                    "value": "Rio de Janeiro"
+                },
+                {
+                    "name": "aditional_info_extra_entrega_nome",
+                    "value": "LOG_VIP"
+                },
+                {
+                    "name": "aditional_info_extra_entrega_valor",
+                    "value": "12.90"
+                },
+                {
+                    "name": "aditional_info_extra_entrega_modalidade",
+                    "value": "LOG_VIP"
+                },
+                {
+                    "name": "aditional_info_extra_device",
+                    "value": "Android"
+                },
+                {
+                    "name": "aditional_info_brands",
+                    "value": ""
+                },
+                {
+                    "name": "aditional_info_parcels_number",
+                    "value": "1"
+                },
+                {
+                    "name": "aditional_info_juros_parcelamento",
+                    "value": "0"
+                },
+                {
+                    "name": "aditional_info_extra_entrega_cep",
+                    "value": "23061-370"
+                },
+                {
+                    "name": "aditional_info_extra_estado",
+                    "value": "RIO DE JANEIRO"
+                },
+                {
+                    "name": "aditional_info_parcels_valor",
+                    "value": "148.94"
+                },
+                {
+                    "name": "aditional_info_extra_entrega_prazo",
+                    "value": "6"
+                },
+                {
+                    "name": "aditional_info_parcels_juros",
+                    "value": "0"
+                },
+                {
+                    "name": "aditional_info_parcels_juros_multiplo",
+                    "value": "0"
+                },
+                {
+                    "name": "aditional_info_parcels_total_multiplo",
+                    "value": "148.94"
+                },
+                {
+                    "name": "aditional_info_ _fbp",
+                    "value": "fb.2.1675969619253.538308205"
+                },
+                {
+                    "name": "aditional_info_id_de_pagamento",
+                    "value": "09022023071042229"
+                },
+                {
+                    "name": "aditional_info_checkout_source",
+                    "value": "web"
+                },
+                {
+                    "name": "aditional_info_delivery_days_min",
+                    "value": "6"
+                },
+                {
+                    "name": "aditional_info_delivery_days_max",
+                    "value": "7"
+                },
+                {
+                    "name": "applied_discounts",
+                    "value": "DiscountCodes = LUDBR, Amount = 35.97"
+                },
+                {
+                    "name": "fbpCookie",
+                    "value": "fb.2.1675969619253.538308205"
+                },
+                {
+                    "name": "fbcCookie",
+                    "value": "Not Found"
+                },
+                {
+                    "name": "gclidCookie",
+                    "value": "Not Found"
+                },
+                {
+                    "name": "ttpCookie",
+                    "value": "testestest"
+                },
+                {
+                    "name": "ttclidCookie",
+                    "value": "E.C.P.v3fQ2RHacdksKfofPmlyuStIIHJ4Af1tKYxF9zz2c2PLx1Oaw15oHpcfl5AH"
+                },
+                {
+                    "name": "userAgent",
+                    "value": "Mozilla/5.0 (Linux; Android 10; motorola one macro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36"
+                },
+                {
+                    "name": "userIP",
+                    "value": "189.40.83.71"
+                }
+            ],
+            "number": 3682,
+            "order_number": 4682,
+            "order_status_url": "https://lood.com.br/67003318555/orders/22f305092923060d266a908fe3d099c2/authenticate?key=61fe236fed7e929f817b00bfa0d8c896",
+            "original_total_duties_set": "None",
+            "payment_gateway_names": [
+                "EvolveHub Gateway"
+            ],
+            "phone": "+5521982078732",
+            "presentment_currency": "BRL",
+            "processed_at": "2023-02-09T16:10:42-03:00",
+            "processing_method": "",
+            "reference": "None",
+            "referring_site": "None",
+            "source_identifier": "None",
+            "source_name": "16392290305",
+            "source_url": "None",
+            "subtotal_price": "136.04",
+            "subtotal_price_set": {
+                "shop_money": {
+                    "amount": "136.04",
+                    "currency_code": "BRL"
+                },
+                "presentment_money": {
+                    "amount": "136.04",
+                    "currency_code": "BRL"
+                }
+            },
+            "tags": "Pix",
+            "tax_lines": [
+
+            ],
+            "taxes_included": false,
+            "test": false,
+            "token": "22f305092923060d266a908fe3d099c2",
+            "total_discounts": "43.81",
+            "total_discounts_set": {
+                "shop_money": {
+                    "amount": "43.81",
+                    "currency_code": "BRL"
+                },
+                "presentment_money": {
+                    "amount": "43.81",
+                    "currency_code": "BRL"
+                }
+            },
+            "total_line_items_price": "179.85",
+            "total_line_items_price_set": {
+                "shop_money": {
+                    "amount": "179.85",
+                    "currency_code": "BRL"
+                },
+                "presentment_money": {
+                    "amount": "179.85",
+                    "currency_code": "BRL"
+                }
+            },
+            "total_outstanding": "0.00",
+            "total_price": "148.94",
+            "total_price_set": {
+                "shop_money": {
+                    "amount": "148.94",
+                    "currency_code": "BRL"
+                },
+                "presentment_money": {
+                    "amount": "148.94",
+                    "currency_code": "BRL"
+                }
+            },
+            "total_shipping_price_set": {
+                "shop_money": {
+                    "amount": "12.90",
+                    "currency_code": "BRL"
+                },
+                "presentment_money": {
+                    "amount": "12.90",
+                    "currency_code": "BRL"
+                }
+            },
+            "total_tax": "0.00",
+            "total_tax_set": {
+                "shop_money": {
+                    "amount": "0.00",
+                    "currency_code": "BRL"
+                },
+                "presentment_money": {
+                    "amount": "0.00",
+                    "currency_code": "BRL"
+                }
+            },
+            "total_tip_received": "0.00",
+            "total_weight": 0,
+            "updated_at": "2023-02-09T16:12:18-03:00",
+            "user_id": "None",
+            "billing_address": {
+                "first_name": "Vitor ",
+                "address1": "Rua Professora Maria Jurema Muniz,79,Cosmos",
+                "phone": "(21) 98207-8732",
+                "city": "Rio de Janeiro",
+                "zip": "23061-370",
+                "province": "Rio de Janeiro",
+                "country": "Brazil",
+                "last_name": "Carvalho ",
+                "address2": "Casa 01",
+                "company": "104.786.597-17",
+                "latitude": "None",
+                "longitude": "None",
+                "name": "Vitor  Carvalho ",
+                "country_code": "BR",
+                "province_code": "RJ"
+            },
+            "customer": {
+                "id": 6711583736091,
+                "email": "victorio-rj@hotmail.com",
+                "accepts_marketing": true,
+                "created_at": "2022-12-07T01:13:02-03:00",
+                "updated_at": "2023-02-09T16:12:21-03:00",
+                "first_name": "Vitor ",
+                "last_name": "Carvalho ",
+                "state": "enabled",
+                "note": "None",
+                "verified_email": true,
+                "multipass_identifier": "None",
+                "tax_exempt": false,
+                "tags": "newsletter",
+                "currency": "BRL",
+                "phone": "None",
+                "accepts_marketing_updated_at": "2022-12-07T01:13:02-03:00",
+                "marketing_opt_in_level": "single_opt_in",
+                "tax_exemptions": [
+
+                ],
+                "email_marketing_consent": {
+                    "state": "subscribed",
+                    "opt_in_level": "single_opt_in",
+                    "consent_updated_at": "2022-12-07T01:13:02-03:00"
+                },
+                "sms_marketing_consent": "None",
+                "admin_graphql_api_id": "gid://shopify/Customer/6711583736091",
+                "default_address": {
+                    "id": 8982943891739,
+                    "customer_id": 6711583736091,
+                    "first_name": "Vitor",
+                    "last_name": "Carvalho",
+                    "company": "104.786.597-17",
+                    "address1": "Rua Professora Maria Jurema Muniz,79,Cosmos",
+                    "address2": "Casa 01",
+                    "city": "Rio de Janeiro",
+                    "province": "Rio de Janeiro",
+                    "country": "Brazil",
+                    "zip": "23061-370",
+                    "phone": "(21) 98207-8732",
+                    "name": "Vitor Carvalho",
+                    "province_code": "RJ",
+                    "country_code": "BR",
+                    "country_name": "Brazil",
+                    "default": true
+                }
+            },
+            "discount_applications": [{
+                "target_type": "line_item",
+                "type": "manual",
+                "value": "43.81",
+                "value_type": "fixed_amount",
+                "allocation_method": "across",
+                "target_selection": "all",
+                "title": "Custom discount",
+                "description": "Custom discount"
+            }],
+            "fulfillments": [
+
+            ],
+            "line_items": [{
+                    "id": 13742872461595,
+                    "admin_graphql_api_id": "gid://shopify/LineItem/13742872461595",
+                    "fulfillable_quantity": 1,
+                    "fulfillment_service": "manual",
+                    "fulfillment_status": "None",
+                    "gift_card": false,
+                    "grams": 200,
+                    "name": "Perfume Lood Pantera 75ml",
+                    "price": "109.95",
+                    "price_set": {
+                        "shop_money": {
+                            "amount": "109.95",
+                            "currency_code": "BRL"
+                        },
+                        "presentment_money": {
+                            "amount": "109.95",
+                            "currency_code": "BRL"
+                        }
+                    },
+                    "product_exists": true,
+                    "product_id": 7974456492315,
+                    "properties": [{
+                        "name": "Desconto LUDBR",
+                        "value": " (- R$21.99)"
+                    }],
+                    "quantity": 1,
+                    "requires_shipping": true,
+                    "sku": "Lood0001",
+                    "taxable": false,
+                    "title": "Perfume Lood Pantera 75ml",
+                    "total_discount": "0.00",
+                    "total_discount_set": {
+                        "shop_money": {
+                            "amount": "0.00",
+                            "currency_code": "BRL"
+                        },
+                        "presentment_money": {
+                            "amount": "0.00",
+                            "currency_code": "BRL"
+                        }
+                    },
+                    "variant_id": 43676964225307,
+                    "variant_inventory_management": "shopify",
+                    "variant_title": "None",
+                    "vendor": "Use-Lood",
+                    "tax_lines": [
+
+                    ],
+                    "duties": [
+
+                    ],
+                    "discount_allocations": [{
+                        "amount": "26.79",
+                        "amount_set": {
+                            "shop_money": {
+                                "amount": "26.79",
+                                "currency_code": "BRL"
+                            },
+                            "presentment_money": {
+                                "amount": "26.79",
+                                "currency_code": "BRL"
+                            }
+                        },
+                        "discount_application_index": 0
+                    }]
+                },
+                {
+                    "id": 13742872494363,
+                    "admin_graphql_api_id": "gid://shopify/LineItem/13742872494363",
+                    "fulfillable_quantity": 1,
+                    "fulfillment_service": "manual",
+                    "fulfillment_status": "None",
+                    "gift_card": false,
+                    "grams": 1000,
+                    "name": "KIT 01 Body Spray Lood Pantera + 01 BioGlitter Dourado (Grátis)",
+                    "price": "69.90",
+                    "price_set": {
+                        "shop_money": {
+                            "amount": "69.90",
+                            "currency_code": "BRL"
+                        },
+                        "presentment_money": {
+                            "amount": "69.90",
+                            "currency_code": "BRL"
+                        }
+                    },
+                    "product_exists": true,
+                    "product_id": 8111091482907,
+                    "properties": [{
+                        "name": "Desconto LUDBR",
+                        "value": " (- R$13.98)"
+                    }],
+                    "quantity": 1,
+                    "requires_shipping": true,
+                    "sku": "KITLOOD0004",
+                    "taxable": false,
+                    "title": "KIT 01 Body Spray Lood Pantera + 01 BioGlitter Dourado (Grátis)",
+                    "total_discount": "0.00",
+                    "total_discount_set": {
+                        "shop_money": {
+                            "amount": "0.00",
+                            "currency_code": "BRL"
+                        },
+                        "presentment_money": {
+                            "amount": "0.00",
+                            "currency_code": "BRL"
+                        }
+                    },
+                    "variant_id": 44459624268059,
+                    "variant_inventory_management": "shopify",
+                    "variant_title": "None",
+                    "vendor": "Lood by Ludmilla",
+                    "tax_lines": [
+
+                    ],
+                    "duties": [
+
+                    ],
+                    "discount_allocations": [{
+                        "amount": "17.02",
+                        "amount_set": {
+                            "shop_money": {
+                                "amount": "17.02",
+                                "currency_code": "BRL"
+                            },
+                            "presentment_money": {
+                                "amount": "17.02",
+                                "currency_code": "BRL"
+                            }
+                        },
+                        "discount_application_index": 0
+                    }]
+                }
+            ],
+            "payment_terms": "None",
+            "refunds": [
+
+            ],
+            "shipping_address": {
+                "first_name": "Vitor",
+                "address1": "Rua Professora Maria Jurema Muniz,79,Cosmos",
+                "phone": "(21) 98207-8732",
+                "city": "Rio de Janeiro",
+                "zip": "23061-370",
+                "province": "Rio de Janeiro",
+                "country": "Brazil",
+                "last_name": "Carvalho",
+                "address2": "Casa 01",
+                "company": "104.786.597-17",
+                "latitude": -22.912111,
+                "longitude": -43.621599,
+                "name": "Vitor Carvalho",
+                "country_code": "BR",
+                "province_code": "RJ"
+            },
+            "shipping_lines": [{
+                "id": 4302701822235,
+                "carrier_identifier": "None",
+                "code": "LOG_VIP",
+                "delivery_category": "None",
+                "discounted_price": "12.90",
+                "discounted_price_set": {
+                    "shop_money": {
+                        "amount": "12.90",
+                        "currency_code": "BRL"
+                    },
+                    "presentment_money": {
+                        "amount": "12.90",
+                        "currency_code": "BRL"
+                    }
+                },
+                "phone": "None",
+                "price": "12.90",
+                "price_set": {
+                    "shop_money": {
+                        "amount": "12.90",
+                        "currency_code": "BRL"
+                    },
+                    "presentment_money": {
+                        "amount": "12.90",
+                        "currency_code": "BRL"
+                    }
+                },
+                "requested_fulfillment_service_id": "None",
+                "source": "None",
+                "title": "Entrega padrão",
+                "tax_lines": [
+
+                ],
+                "discount_allocations": [
+
+                ]
+            }]
+        },
+        "metadata": {
+            "Content-Type": "application/json",
+            "X-Shopify-Topic": "orders/paid",
+            "X-Shopify-Shop-Domain": "use-lood.myshopify.com",
+            "X-Shopify-Order-Id": "5262982283547",
+            "X-Shopify-Test": "false",
+            "X-Shopify-Hmac-SHA256": "6MKyvqNGxPDOfTe3IGBb3XNmUbU/Pz3KUQo31s3M79s=",
+            "X-Shopify-Webhook-Id": "0999f9f0-0156-4e8c-89dd-8963c3f59116",
+            "X-Shopify-API-Version": "2023-01"
+        }
+    }
+}
