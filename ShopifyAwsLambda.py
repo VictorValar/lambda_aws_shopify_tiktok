@@ -6,38 +6,44 @@
 ## TEST_EVENT_CODE
 
 ## Any suggestions or improvements are welcome! Feel free to contribute to this project or provide feedback.
-
-import logging
-import traceback
 from pytt_events.auth import TikTokAuth
 from pytt_events.event import Event
 from pytt_events.properties import Properties
 from pytt_events.context import Context, Ad, Page, User
 from pytt_events.properties import Content, ContentType
 from pytt_events.tiktok_events_api import TikTokEventsApi
+import logging
+import traceback
 import time, datetime
-
+import json
+from dotenv import load_dotenv
+import os
+from requests import Response
 
 def lambda_handler(event, context):
+    ## Set up logging to CloudWatch Logs for debugging https://docs.aws.amazon.com/lambda/latest/dg/python-logging.html
+    logger = logging.getLogger()
+    logger.setLevel(logging.DEBUG)
+
     logging.debug(msg='funcall: lambda_handler')
     paylod = event.get('detail').get('payload')
+    logging.info(msg='payload: ' + json.dumps(paylod, indent=4, sort_keys=True))
 
     try:
-        event_response = main(paylod=paylod)
-        if event_response == 200:
-            return event_response
-        else:
-            return event_response
+        tiktok_response = main(paylod=paylod)
+
+        # error code handling is done by the TikTok Events API wrraper
+        return tiktok_response
 
     except Exception as excp:
         traceback.print_exc()
         logging.error(excp)
         return {
-            'statusCode': 400,
+            'statusCode': 400 if type(excp) == ValueError else 500,
             'body': 'event not sent: ' + str(excp) + ' ' + str(traceback.format_exc())
         }
 
-def main(paylod):
+def main(paylod) -> Response:
     '''
     Sends events to TikTok Pixel
     '''
@@ -118,5 +124,5 @@ def main(paylod):
     )
 
 
-    return response
+    return response.json()
 
