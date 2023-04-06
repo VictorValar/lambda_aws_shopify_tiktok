@@ -21,7 +21,7 @@ import os
 from requests import Response
 
 def lambda_handler(event, context):
-    ## Set up logging to CloudWatch Logs for debugging https://docs.aws.amazon.com/lambda/latest/dg/python-logging.html
+
     logger = logging.getLogger()
     logger.setLevel(logging.DEBUG)
 
