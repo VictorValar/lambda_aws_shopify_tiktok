@@ -1,10 +1,6 @@
 
 from .. import ShopifyAwsLambda
 import json
-import logging
-from dotenv import load_dotenv
-import os
-
 
 def test_shopify_aws(caplog):
     with open('tests/order.json', 'r') as file:
