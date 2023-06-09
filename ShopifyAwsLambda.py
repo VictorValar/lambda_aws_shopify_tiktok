@@ -57,7 +57,7 @@ def main(paylod) -> Response:
         elif item["name"] == "userIP":
             userIP = item["value"]
         elif item["name"] == "Link de pedido":
-            event_source_url = item["value"]
+            event_source_url = paylod.get("order_status_url")
 
     if ttclid == 'Not Found':
         ttclid = None

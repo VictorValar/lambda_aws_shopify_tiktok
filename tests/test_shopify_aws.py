@@ -3,7 +3,7 @@ from .. import ShopifyAwsLambda
 import json
 
 def test_shopify_aws(caplog):
-    with open('tests/order.json', 'r') as file:
+    with open('tests/order.json', 'r', encoding='utf-8') as file:
         paid_event = json.load(file)
 
         response = ShopifyAwsLambda.lambda_handler(paid_event, None)
