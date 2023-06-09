@@ -78,7 +78,7 @@ def main(paylod) -> Response:
             referrer=event_source_url,
         ),
         user=User(
-            external_id=paylod.get('user_id'),
+            external_id=paylod.get('customer').get('id'),
             email=paylod.get('customer')['email'],
             phone_number=paylod.get('phone'),
             ttp=ttp
