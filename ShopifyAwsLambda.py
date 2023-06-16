@@ -44,9 +44,9 @@ def lambda_handler(event, context):
         }
 
 def main(paylod) -> Response:
-    '''
+    """
     Sends events to TikTok Pixel
-    '''
+    """
     for item in paylod.get('note_attributes'):
         if item["name"] == "ttclidCookie":
             ttclid = item["value"]
@@ -89,30 +89,31 @@ def main(paylod) -> Response:
 
     for item in items:
         content = Content(
-            content_type=ContentType.PRODUCT,
             content_id=item.get('product_id'),
             content_name=item.get('name'),
             content_category=item.get('vendor'),
             price=item.get('price'),
             quantity=item.get('quantity'),
+            content_type=ContentType.PRODUCT,
 
         )
-    contents.append(content)
+        contents.append(content)
 
     properties = Properties(
         currency='BRL', # ISO 4217
         value=float(paylod.get('total_price')),
-        description=item.get('title'),
+        description="Payment status",
         query='none',
-        contents=contents)
-    event = Event (
+        contents=contents
+    )
+    event = Event(
         pixel_code=auth.TIKTOK_PIXEL_ID,
         test_event_code=auth.TIKTOK_TEST_EVENT_CODE,
         event='CompletePayment',
-        event_id=str(time.time()) + "." + userIP,
-        timestamp=paylod.get('created_at',datetime.datetime.now()), # str or datetime object '2023-02-01T00:00:00-03:00'
+        event_id=f"{str(time.time())}.{userIP}",
+        timestamp=paylod.get('created_at', datetime.datetime.now()),
         context=context,
-        properties=properties
+        properties=properties,
     )
 
     logging.debug('event created')
