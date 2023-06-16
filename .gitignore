@@ -127,4 +127,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-tests/order.json
+tests/order.json!/update_lambda_vars.sh
+
